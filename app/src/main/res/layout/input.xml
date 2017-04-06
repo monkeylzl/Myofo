@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/input_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bg_top">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/actionbar_logo" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:src="@drawable/saoma_logo"
+            android:visibility="visible" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_usebike"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/bicycle_signal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_text1"
+            android:gravity="center"
+            android:text="计费说明：首单免费"
+            android:textColor="#40320D"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/input_plate_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/code_edit"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+
+            android:background="@drawable/bg_edit1"
+            android:gravity="center_vertical|center_horizontal"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textColor="#40320D"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/check_code"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/checkf"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/code_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="请输入车牌号，获取解锁码"
+        android:textColor="#40320D" />
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/light_off"
+        app:elevation="2dp"
+        android:scaleType="center"
+        android:visibility="visible" />
+    </LinearLayout>
